@@ -1,6 +1,6 @@
 import { useEffect, useMemo } from 'react';
-import { ListGroup, ListGroupItem, Card, Row, Col } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
+import s from './PatientList.module.css';
 import { getAllPatients } from '../../redux/patients/patient-operations';
 import {
   filterSelector,
@@ -8,7 +8,7 @@ import {
   patientListSelector,
 } from '../../redux/patients/patient-selectors';
 import { findById, patientID } from '../../redux/patients/patient-slice';
-import { MyButton } from '../Button/Button';
+import { MyButton } from '../MyButton/MyButton';
 import { Filter } from '../Filter/Filter';
 import { PatientItem } from './PatientItem/PatientItem';
 
@@ -40,24 +40,20 @@ export const PatientList = () => {
   );
 
   return (
-    <Card className="p-2 bg-info">
-      <Row>
-        <Col className="pl-0">
-          <Filter />
-        </Col>
-        <Col className="p-0">
-          <MyButton navigateTo="add-patient" textBtn="Додати пацієнат" />
-        </Col>
-      </Row>
-      <ListGroup as="ul">
+    <div className={s.listContainer}>
+      <div className={s.listForm}>
+        <Filter />
+        <MyButton navigateTo="add-patient" textBtn="Додати пацієната" />
+      </div>
+      <ul className={s.patientList}>
         {items?.map((patient) => {
           return (
-            <ListGroupItem as="li" action key={patient.id} href={patient.id}>
+            <li className={s.patientItem} key={patient.id} href={patient.id}>
               <PatientItem patientData={patient} showPatient={showPatient} />
-            </ListGroupItem>
+            </li>
           );
         })}
-      </ListGroup>
-    </Card>
+      </ul>
+    </div>
   );
 };

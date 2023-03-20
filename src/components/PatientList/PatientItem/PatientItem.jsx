@@ -1,4 +1,5 @@
 import { Card, Col, Row } from 'react-bootstrap';
+import s from './PatientItem.module.css';
 import { NavLink } from 'react-router-dom';
 
 export const PatientItem = ({ patientData, showPatient }) => {
@@ -10,23 +11,21 @@ export const PatientItem = ({ patientData, showPatient }) => {
       id={id}
       onClick={() => showPatient(id)}
       to={'/info/' + id}
-      className="d-flex justify-content-between align-items-center"
+      className={s.shortInfo}
     >
-      <Row className="d-flex">
-        <Col>
-          <Card.Text className="fw-bold">
-            {firstName} {lastName}
-          </Card.Text>
-          <Card.Text>
-            Д.н.:{birthday} Вік:{age}
-          </Card.Text>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <Card.Text>{gender}</Card.Text>
-        </Col>
-      </Row>
+      <div className={s.Name}>
+        {firstName} {lastName}
+      </div>
+      <div className={s.Birthday}>Д.н.:{birthday}</div>
+      <div className={s.Age}>Вік:{age}</div>
+      <div className={s.Gender}>{gender}</div>
     </NavLink>
   );
 };
+
+<div class="container">
+  <div class="Name"></div>
+  <div class="Birthday"></div>
+  <div class="Age"></div>
+  <div class="Gender"></div>
+</div>;

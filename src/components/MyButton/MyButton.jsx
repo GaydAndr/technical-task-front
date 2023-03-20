@@ -1,15 +1,16 @@
-import { Button } from 'react-bootstrap';
+import s from './MyButton.module.css';
 import { NavLink } from 'react-router-dom';
 
 export const MyButton = ({ navigateTo, textBtn, type }) => {
   return (
     <NavLink
+      className={s.btn}
       onClick={() => {
         // console.log(navigateTo);
       }}
       to={navigateTo}
     >
-      <Button type={type}>{textBtn}</Button>
+      <div className={s.textBtm}>{textBtn}</div>
     </NavLink>
   );
 };

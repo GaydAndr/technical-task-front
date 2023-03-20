@@ -1,0 +1,76 @@
+.shortInfo {
+  display: grid;
+  grid-template-columns: 1.7fr 0.8fr 0.5fr 0.5fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: column;
+  align-content: center;
+  justify-items: start;
+  grid-template-areas:
+    'Name Name Gender Gender'
+    'Birthday Age Gender Gender';
+
+  direction: ltr;
+  height: 80px;
+  border-radius: 15px 5px 15px 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 10px;
+
+  outline: none;
+  background: #7eff7efb;
+  color: #780096fb;
+  text-align: left;
+  transition: box-shadow var(--transition), color var(--transition);
+}
+
+.shortInfo:hover,
+.shortInfo:focus {
+  /* background: #009600fb; */
+  color: #1a0020fb;
+
+  -webkit-box-shadow: 10px 11px 12px -9px #009b00fb inset;
+  -moz-box-shadow: 10px 11px 12px -9px #009b00fb inset;
+  box-shadow: 10px 11px 12px -5px #009b00fb inset;
+}
+
+.shortInfo:active {
+  box-shadow: 7px 8px 12px -5px #009b00fb inset,
+    -4px -5px 12px -5px #009b00fb inset;
+}
+
+.shortInfo:left {
+  background: #000;
+}
+
+.Name {
+  justify-self: start;
+  align-self: center;
+  grid-area: Name;
+  width: 100%;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.Birthday {
+  align-self: center;
+  grid-area: Birthday;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.Age {
+  justify-self: center;
+  align-self: center;
+  grid-area: Age;
+  width: 100%;
+  font-size: 14px;
+}
+
+.Gender {
+  justify-self: center;
+  align-self: center;
+  grid-area: Gender;
+}

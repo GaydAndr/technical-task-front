@@ -1,0 +1,15 @@
+.wraper {
+  display: flex;
+  gap: 10px;
+  height: 100vh;
+}
+
+.colLeft {
+  /* flex: 2 1; */
+  min-width: 400px;
+  width: 400px;
+}
+
+.colRight {
+  flex: 2 1 auto;
+}

@@ -1,0 +1,51 @@
+.listContainer {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
+  height: 100%;
+  background: #c278ff9a;
+}
+
+.listForm {
+  display: flex;
+  gap: 10px;
+  height: 70px;
+  padding-bottom: 15px;
+  justify-content: space-between;
+}
+
+.patientList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: calc(100% - 80px);
+  direction: rtl;
+  overflow-x: auto;
+}
+
+.patientItem {
+  margin-left: 2px;
+}
+
+/* width */
+.patientList::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+.patientList::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+
+  border-radius: 5px;
+}
+
+/* Handle */
+.patientList::-webkit-scrollbar-thumb {
+  background: #a3ff78;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.patientList::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

@@ -1,4 +1,4 @@
-import { FormControl } from 'react-bootstrap';
+import s from './Filter.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { filterSelector } from '../../redux/patients/patient-selectors';
 import { filterPatient } from '../../redux/patients/patient-slice';
@@ -8,9 +8,9 @@ export const Filter = () => {
   const dispatch = useDispatch();
 
   return (
-    <label htmlFor="filter">
-      <FormControl
-        className="mb-2"
+    <label htmlFor="filter" className={s.searchLabel}>
+      <input
+        className={s.searchInput}
         type="text"
         name="filter"
         placeholder="Шукати пацієнта"

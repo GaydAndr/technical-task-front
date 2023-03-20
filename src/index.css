@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* --main-color: #f5f6fb;
+  --secondary-color: #ffffff;
+
+  --accent-color: #ff6b09;
+  --accent-hover-color: #cb5709;
+
+  --accent-pale-color: ;
+
+  --main-text: #000;
+  --secondary-text: #555555;
+  --button-background: #02172a;
+  --accent-button-background: #ff6b01;
+  --expenses-text: ;
+  --income-text: ; */
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 *,
 *:before,
 *:after {
@@ -12,11 +32,27 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #000000;
+  font-family: 'Montserrat', sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 a,
