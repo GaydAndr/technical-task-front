@@ -2,7 +2,7 @@
   "name": "technical-task-front",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://your_username.github.io/technical-task-front/"
+  "homepage": "https://your_username.github.io/technical-task-front/",
   "dependencies": {
     "@mui/material": "^5.11.13",
     "@redux-devtools/extension": "^3.2.5",
