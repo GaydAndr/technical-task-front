@@ -1,5 +1,6 @@
 .btn {
-  width: 140px;
+  height: 55px;
+  display: block;
 
   line-height: 1.1;
   border-radius: 15px 5px 15px 5px;
