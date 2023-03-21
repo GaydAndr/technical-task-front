@@ -1,0 +1,12 @@
+.infoContainer {
+  height: 100vh;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 20px;
+  background: #dbafff;
+  border-radius: 15px 0 0 0;
+
+  -webkit-box-shadow: 10px 0 12px -9px #a436ff inset;
+  -moz-box-shadow: 10px 0 12px -9px #a436ff inset;
+  box-shadow: 10px 0 12px -5px #a436ff inset;
+}

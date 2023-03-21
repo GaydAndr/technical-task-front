@@ -1,5 +1,6 @@
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
+import s from './InfoPage.module.css';
 import {
   patientIdSelector,
   patientInfoSelector,
@@ -12,7 +13,6 @@ import {
 } from '../redux/patients/patient-slice';
 import { PatientInfo } from '../components/PatientInfo/PatientInfo';
 import { useEffect } from 'react';
-import Button from 'react-bootstrap/Button';
 import { deletePatient } from '../redux/patients/patient-operations';
 
 export const InfoPage = () => {
@@ -21,7 +21,6 @@ export const InfoPage = () => {
   const patientList = useSelector(patientListSelector);
   const patientInfo = useSelector(patientInfoSelector);
   const dispatch = useDispatch();
-  const navigate = useNavigate();
 
   useEffect(() => {
     if (patientList.length !== 0 && !stateId) {
@@ -32,30 +31,17 @@ export const InfoPage = () => {
     }
   }, [dispatch, stateId, patientList, patientId]);
 
-  //
-
-  const hendleDelete = (id) => {
+  const handleDelete = (id) => {
     dispatch(deletePatient(id));
     dispatch(patientID(''));
     dispatch(setPatientList(patientList.filter(({ id }) => id !== patientId)));
-    navigate('/info');
   };
 
   return (
     patientInfo && (
-      <>
-        <PatientInfo patientInfo={patientInfo} />
-
-        <Button
-          variant="primary"
-          type="button"
-          onClick={() => {
-            hendleDelete(patientId);
-          }}
-        >
-          delete
-        </Button>
-      </>
+      <section className={s.infoContainer}>
+        <PatientInfo patientInfo={patientInfo} handleDelete={handleDelete} />
+      </section>
     )
   );
 };

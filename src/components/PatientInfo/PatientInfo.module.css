@@ -1,0 +1,44 @@
+/* .infoContainer { */
+/* background: #ff8787; */
+/* } */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+
+  /* padding-bottom: 5px; */
+  border-bottom: 2px solid #7eff7efb;
+  /* border-radius: 50%; */
+}
+
+.nameConteiner {
+  align-self: end;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.age {
+  align-self: flex-end;
+  min-width: 40px;
+  margin-right: 50px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.rSide {
+  display: flex;
+  align-items: center;
+}
+
+.btnGroup {
+  display: flex;
+  gap: 10px;
+}
+
+.personalInfo,
+.addressInfo {
+  display: flex;
+  justify-content: space-between;
+}
