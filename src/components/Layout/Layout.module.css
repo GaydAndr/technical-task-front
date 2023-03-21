@@ -1,6 +1,6 @@
-.wraper {
+.wrapper {
   display: flex;
-  gap: 10px;
+  /* gap: 10px; */
   height: 100vh;
 }
 

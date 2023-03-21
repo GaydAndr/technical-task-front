@@ -5,7 +5,7 @@ import { PatientList } from '../PatientList/PatientList';
 
 export const Layout = () => {
   return (
-    <div className={s.wraper}>
+    <div className={s.wrapper}>
       <div className={s.colLeft}>
         <PatientList />
       </div>
