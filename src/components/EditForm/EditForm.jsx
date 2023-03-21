@@ -63,7 +63,7 @@ export const EditForm = () => {
       firstName,
       lastName,
       email,
-      address: {
+      fullAddress: {
         country,
         region,
         address,

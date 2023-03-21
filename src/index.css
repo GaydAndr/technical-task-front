@@ -31,8 +31,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #000000;
+  color: #780096fb;
   font-family: 'Montserrat', sans-serif;
+  background: #dbafff;
+  overflow: hidden;
 }
 
 code {
