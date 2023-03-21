@@ -27,7 +27,6 @@
 
 .shortInfo:hover,
 .shortInfo:focus {
-  /* background: #009600fb; */
   color: #1a0020fb;
 
   -webkit-box-shadow: 10px 11px 12px -9px #009b00fb inset;
@@ -40,8 +39,9 @@
     -4px -5px 12px -5px #009b00fb inset;
 }
 
-.shortInfo:left {
-  background: #000;
+.shortInfo.active {
+  color: #fffffffb;
+  background: #009b00fb;
 }
 
 .Name {
@@ -58,7 +58,7 @@
   grid-area: Birthday;
   width: 100%;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .Age {
@@ -67,10 +67,15 @@
   grid-area: Age;
   width: 100%;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .Gender {
-  justify-self: center;
+  justify-self: flex-end;
   align-self: center;
   grid-area: Gender;
+}
+
+.svg {
+  display: block;
 }

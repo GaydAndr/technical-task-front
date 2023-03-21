@@ -4,17 +4,17 @@ import s from './PatientList.module.css';
 import { getAllPatients } from '../../redux/patients/patient-operations';
 import {
   filterSelector,
-  // patientIdSelector,
   patientListSelector,
 } from '../../redux/patients/patient-selectors';
 import { findById, patientID } from '../../redux/patients/patient-slice';
 import { MyButton } from '../MyButton/MyButton';
 import { Filter } from '../Filter/Filter';
 import { PatientItem } from './PatientItem/PatientItem';
+import { useParams } from 'react-router-dom';
 
 export const PatientList = () => {
   const patients = useSelector(patientListSelector);
-  // const stateId = useSelector(patientIdSelector);
+  const { patientId } = useParams();
 
   const filter = useSelector(filterSelector);
   const dispatch = useDispatch();
@@ -43,7 +43,11 @@ export const PatientList = () => {
     <div className={s.listContainer}>
       <div className={s.listForm}>
         <Filter />
-        <MyButton navigateTo="add-patient" textBtn="Додати пацієната" />
+        <MyButton
+          navigateTo="add-patient"
+          active={!patientId ? true : false}
+          textBtn="Додати пацієната"
+        />
       </div>
       <ul className={s.patientList}>
         {items?.map((patient) => {
