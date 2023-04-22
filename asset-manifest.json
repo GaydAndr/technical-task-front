@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/technical-task-front/static/css/main.21709894.css",
-    "main.js": "/technical-task-front/static/js/main.b2274429.js",
+    "main.css": "/technical-task-front/static/css/main.aabcb926.css",
+    "main.js": "/technical-task-front/static/js/main.55aff2bd.js",
     "static/js/787.3ab4e762.chunk.js": "/technical-task-front/static/js/787.3ab4e762.chunk.js",
+    "static/media/symbol-defs.svg": "/technical-task-front/static/media/symbol-defs.768487af8e148eafe05666f4f2b7ce8c.svg",
     "index.html": "/technical-task-front/index.html",
-    "main.21709894.css.map": "/technical-task-front/static/css/main.21709894.css.map",
-    "main.b2274429.js.map": "/technical-task-front/static/js/main.b2274429.js.map",
+    "main.aabcb926.css.map": "/technical-task-front/static/css/main.aabcb926.css.map",
+    "main.55aff2bd.js.map": "/technical-task-front/static/js/main.55aff2bd.js.map",
     "787.3ab4e762.chunk.js.map": "/technical-task-front/static/js/787.3ab4e762.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21709894.css",
-    "static/js/main.b2274429.js"
+    "static/css/main.aabcb926.css",
+    "static/js/main.55aff2bd.js"
   ]
 }
