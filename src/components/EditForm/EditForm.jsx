@@ -89,7 +89,7 @@ export const EditForm = () => {
     setBirthday('');
     setBirthday('');
     setGender('');
-    navigate('/info/' + prevPatient.id);
+    navigate('/technical-task-front/info/' + prevPatient.id);
   };
 
   return (

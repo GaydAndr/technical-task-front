@@ -9,7 +9,7 @@ export const BadPath = () => {
 
   useEffect(() => {
     if (patientList.length !== 0) {
-      navigate('/info/' + patientList[0].id);
+      navigate('/technical-task-front/info/' + patientList[0].id);
     }
   }, [navigate, patientList]);
 
