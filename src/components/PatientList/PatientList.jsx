@@ -44,7 +44,7 @@ export const PatientList = () => {
       <div className={s.listForm}>
         <Filter />
         <MyButton
-          navigateTo="add-patient"
+          navigateTo="/technical-task-front/add-patient"
           active={!patientId ? true : false}
           textBtn="Додати пацієната"
         />

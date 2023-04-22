@@ -8,10 +8,17 @@ export const App = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index path="/info/:patientId" element={<InfoPage />} />
-          <Route path="/add-patient" element={<EditForm />} />
-          <Route path="*" element={<BadPath />} />
+        <Route path="/technical-task-front/" element={<Layout />}>
+          <Route
+            index
+            path="/technical-task-front/info/:patientId"
+            element={<InfoPage />}
+          />
+          <Route
+            path="/technical-task-front/add-patient"
+            element={<EditForm />}
+          />
+          <Route path="/technical-task-front/*" element={<BadPath />} />
         </Route>
       </Routes>
     </>

@@ -14,7 +14,7 @@ export const PatientItem = ({ patientData, showPatient }) => {
     <NavLink
       id={id}
       onClick={() => showPatient(id)}
-      to={'/info/' + id}
+      to={'/technical-task-front/info/' + id}
       className={`${s.shortInfo} ${patientId === id ? s.active : ''}`}
     >
       <div className={s.Name}>
