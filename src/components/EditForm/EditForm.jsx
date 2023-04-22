@@ -74,7 +74,7 @@ export const EditForm = () => {
     };
     dispatch(postPatient(credentials)).then((data) => {
       if (typeof data.payload !== 'string') {
-        navigate('/info/' + data.payload.id);
+        navigate('/technical-task-front/info/' + data.payload.id);
       }
     });
   };

@@ -28,7 +28,7 @@ export const PatientInfo = ({ patientInfo, handleDelete }) => {
           <div className={s.btnGroup}>
             <MyButton navigateTo="" active={false} textBtn="Редагувати" />
             <MyButton
-              navigateTo="/info"
+              navigateTo="/technical-task-front/info"
               active={false}
               textBtn="Видалити"
               doFunc={handleDelete}
